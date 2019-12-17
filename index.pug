@@ -1,0 +1,152 @@
+doctype html
+html(lang="es")
+  head
+    title titulo
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet", href="reset/reset.css")
+    link(rel="stylesheet", href="css/all.css")
+    link(rel="stylesheet", href="css/all.min.css")
+    link(rel="stylesheet", href="app.css")
+
+  body
+    header
+      div.container
+        div.header_menu
+          a.header_menu_imagen(href="#")
+            img(src="img/logo.jpg", alt="")
+          nav.header_menu_nav
+            ul.header_menu_listado
+              li: a(href="#") Inicio 
+              li: a(href="#") Que ofrecemos
+              li: a(href="#") Galeria
+              li: a(href="#") Testimonios
+              li: a(href="#") Contacto
+    section
+      div.imagen_portada
+        div.container.centrado
+          h1.titulo_principal VACATIONS AGENCY
+          P.parrafo_principal lorem ipsum dolor sit amet, concectetur
+          a.link_conoce-mas(href="#") Conoce más
+    section.servicios_padding
+      div.container
+        div.servicio_titulo
+          h2.titulo_servicios Nuestros servicios
+          p.servicios_parrafo lorem ipsum dolor sit amet
+        div.servicios_contenido
+          div.servicios_planes
+            div.servicios_icono  
+              i.fa.fa-users
+            div.servicios_planes_titulo
+              h3  Planes
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, pariatur minus veritatis placeat cupiditate vel?
+          div.servicios_planes
+            div.servicios_icono
+              i.fa.fa-plane
+            div.servicios_planes_titulo
+              h3  Viajes
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laboriosam, praesentium, facilis quibusdam provident nesciunt.
+          div.servicios_planes
+            div.servicios_icono
+              i.fa.fa-building
+            div.servicios_planes_titulo
+              h3  Hoteles
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque autem nihil aut blanditiis, quo non. 
+    section
+      div
+        div.galeria_titulo
+          h2  Galeria
+          p lorem ipsum dolor sit amet
+      div.galeria_contenido
+        div.galeria_imagenes
+          img(src="img/imagen1.jpg", alt="") 
+          div.galeria_bg_imagen
+            div.galeria_parrafo_centrado
+              h3 Nombre de imagen
+              p lorem ipsum dolor sit                                
+        div.galeria_imagenes
+          img(src="img/imagen2.jpg", alt="") 
+          div.galeria_bg_imagen
+            div.galeria_parrafo_centrado
+              h3 Nombre de imagen
+              p lorem ipsum dolor sit                     
+        div.galeria_imagenes
+          img(src="img/imagen3.jpg", alt="") 
+          div.galeria_bg_imagen
+            div.galeria_parrafo_centrado
+              h3 Nombre de imagen
+              p lorem ipsum dolor sit                                
+        div.galeria_imagenes
+          img(src="img/imagen4.jpg", alt="") 
+          div.galeria_bg_imagen
+            div.galeria_parrafo_centrado
+              h3 Nombre de imagen
+              p lorem ipsum dolor sit 
+        div.galeria_imagenes
+          img(src="img/imagen5.jpg", alt="") 
+          div.galeria_bg_imagen
+            div.galeria_parrafo_centrado
+              h3 Nombre de imagen
+              p lorem ipsum dolor sit
+        div.galeria_imagenes
+          img(src="img/imagen6.jpg", alt="") 
+          div.galeria_bg_imagen
+            div.galeria_parrafo_centrado
+              h3 Nombre de imagen
+              p lorem ipsum dolor sit  
+    section
+      div.atencion_contenido
+        div.atencion_titulo
+          h2 Estamos listos para atenderte
+        div.atencion_link
+          a(href="#") Ponte en contacto  
+    section.nosotros_contenido
+      div.container
+        div.nosotros_titulo
+          h2 Mira lo que dicen de nosotros
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, velit.
+        div.nosotros_bg
+          div.nosotros_testimonios
+            div.nosotros_testimonios_imagen
+              img(src="img/foto1.jpg", alt="")  
+            p.testimonio_parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptate.
+            p.testimonio_nombre Juan Martínez
+            p.testimonio_empresa Unix
+          div.nosotros_testimonios
+            div.nosotros_testimonios_imagen
+              img(src="img/foto2.jpg", alt="")  
+            p.testimonio_parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptate.
+            p.testimonio_nombre Julia Rob
+            p.testimonio_empresa Ferreters
+          div.nosotros_testimonios
+            div.nosotros_testimonios_imagen
+              img(src="img/foto3.jpg", alt="")  
+            p.testimonio_parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptate.
+            p.testimonio_nombre Eddard Winchester
+            p.testimonio_empresa Tendai   
+    section
+      div.contactanos_titulo
+        h2 cotactanos
+        p lorem ipsum dolor sit amet
+      div.contactanos_contenido
+        div.contactanos_div
+          div.contactanos_titulo
+            h4  TELEFONO
+            p 555 555 555
+            p 333 434 556
+          div.contactanos_titulo
+            h4  DIRECCION
+            p Calle 123 #10-10
+            p  Carrera 10 # 12-03
+        div.contactanos_div
+          div.contactanos_titulo
+            h4 EMAIL
+            p hola@correo.com
+            p contacto@correo.com
+          div.contactanos_titulo
+            h4  HORARIO
+            p Lun - Sab: 8AM - 6PM
+            p Dom: 10AM - 1PM  
+    footer
+      p.footer_parrafo Todos los derechos reservados (c)
