@@ -228,16 +228,102 @@ header .header_menu .header_menu_imagen img {
   width: 26%;
   background: #fff;
   text-align: center;
+  padding: 30px 5px 50px 5px;
+  box-shadow: 1px 3px 3px rgba(25, 25, 25, 0.08);
+  transition: all 0.3s ease;
 }
-.nosotros_contenido .nosotros_bg {
+.nosotros_contenido .nosotros_testimonios:hover {
+  box-shadow: 2px 4px 15px 5px rgba(25, 25, 25, 0.08);
+}
+
+.nosotros_bg {
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
   margin-top: 7rem;
 }
-.nosotros_contenido .nosotros_testimonios_imagen img {
+
+.nosotros_testimonios_imagen img {
   border-radius: 50%;
+}
+
+.nosotros_testimonios_imagen {
+  padding-bottom: 20px;
+}
+
+.testimonio_parrafo {
+  color: #777;
+}
+
+.testimonio_parrafo::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background: #eee;
+  margin: 4rem auto;
+}
+
+.testimonio_empresa {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+.testimonio_nombre {
+  padding-bottom: 10px;
+}
+
+.seccion_contactanos {
+  padding-top: 9rem;
+}
+.seccion_contactanos .contactanos_titulo {
+  text-align: center;
+  line-height: 38px;
+}
+.seccion_contactanos .contactanos_titulo h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.seccion_contactanos .contactanos_titulo p {
+  color: #9b9b9b;
+}
+.seccion_contactanos .contactanos_portada {
+  background-image: url(img/bg-portada.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 9rem 0;
+  margin-top: 7rem;
+}
+.seccion_contactanos .contactanos_div {
+  display: -webkit-box;
+  padding-left: 60px;
+}
+.seccion_contactanos .contactanos_contenido {
+  width: 50%;
+  padding-bottom: 50px;
+  line-height: 30px;
+}
+.seccion_contactanos .contacto_blanco {
+  background-color: white;
+  width: 100%;
+  max-width: 50%;
+  padding: 48px;
+  font-size: 12px;
+}
+.seccion_contactanos .contactanos_contenido p {
+  font-size: 14px;
+  color: #777;
+}
+
+footer {
+  background: #191919;
+  padding: 5rem 0;
+}
+footer .footer_parrafo {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */
