@@ -11,25 +11,25 @@ html(lang="es")
     link(rel="stylesheet", href="app.css")
 
   body
-    header
+    header#mainHeader
       div.container
         div.header_menu
           a.header_menu_imagen(href="#")
             img(src="img/logo.jpg", alt="")
           nav.header_menu_nav
             ul.header_menu_listado
-              li: a(href="#") Inicio 
-              li: a(href="#") Que ofrecemos
-              li: a(href="#") Galeria
-              li: a(href="#") Testimonios
-              li: a(href="#") Contacto
+              li: a.smoothScroll(href="#portada") Inicio 
+              li: a.smoothScroll(href="#servicios") Que ofrecemos
+              li: a.smoothScroll(href="#galeria") Galeria
+              li: a.smoothScroll(href="#testimonios") Testimonios
+              li: a.smoothScroll(href="#") Contacto
     section
-      div.imagen_portada
+      div.imagen_portada#portada
         div.container.centrado
           h1.titulo_principal VACATIONS AGENCY
           P.parrafo_principal lorem ipsum dolor sit amet, concectetur
           a.link_conoce-mas(href="#") Conoce más
-    section.servicios_padding
+    section.servicios_padding#servicios
       div.container
         div.servicio_titulo
           h2.titulo_servicios Nuestros servicios
@@ -53,7 +53,7 @@ html(lang="es")
             div.servicios_planes_titulo
               h3  Hoteles
               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque autem nihil aut blanditiis, quo non. 
-    section
+    section#galeria
       div
         div.galeria_titulo
           h2  Galeria
@@ -63,8 +63,9 @@ html(lang="es")
           img(src="img/imagen1.jpg", alt="") 
           div.galeria_bg_imagen
             div.galeria_parrafo_centrado
-              h3 Nombre de imagen
-              p lorem ipsum dolor sit                                
+              div.imagen_centrado
+                h3 Nombre de imagen
+                p lorem ipsum dolor sit                                
         div.galeria_imagenes
           img(src="img/imagen2.jpg", alt="") 
           div.galeria_bg_imagen
@@ -101,7 +102,7 @@ html(lang="es")
           h2 Estamos listos para atenderte
         div.atencion_link
           a(href="#") Ponte en contacto  
-    section.nosotros_contenido
+    section.nosotros_contenido#testimonios
       div.container
         div.nosotros_titulo
           h2 Mira lo que dicen de nosotros
@@ -125,7 +126,7 @@ html(lang="es")
             p.testimonio_parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptate.
             p.testimonio_nombre Eddard Winchester
             p.testimonio_empresa Tendai   
-    section.seccion_contactanos
+    section.seccion_contactanos#contactos
       div.container
         div.contactanos_titulo
           h2 cotactanos
@@ -152,3 +153,5 @@ html(lang="es")
               p Dom: 10AM - 1PM  
     footer
       p.footer_parrafo Todos los derechos reservados (c)
+    script(src="js/jquery-3.4.1.min.js")
+    script(src="js/main.js")

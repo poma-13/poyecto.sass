@@ -11,30 +11,30 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    <header>
+    <header id="mainHeader">
       <div class="container">
         <div class="header_menu"><a class="header_menu_imagen" href="#"><img src="img/logo.jpg" alt=""></a>
           <nav class="header_menu_nav">
             <ul class="header_menu_listado">
-              <li><a href="#">Inicio </a></li>
-              <li><a href="#">Que ofrecemos</a></li>
-              <li><a href="#">Galeria</a></li>
-              <li><a href="#">Testimonios</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a class="smoothScroll" href="#portada">Inicio </a></li>
+              <li><a class="smoothScroll" href="#servicios">Que ofrecemos</a></li>
+              <li><a class="smoothScroll" href="#galeria">Galeria</a></li>
+              <li><a class="smoothScroll" href="#testimonios">Testimonios</a></li>
+              <li><a class="smoothScroll" href="#">Contacto</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
     <section>
-      <div class="imagen_portada">
+      <div class="imagen_portada" id="portada">
         <div class="container centrado">
           <h1 class="titulo_principal">VACATIONS AGENCY</h1>
           <P class="parrafo_principal">lorem ipsum dolor sit amet, concectetur</P><a class="link_conoce-mas" href="#">Conoce más</a>
         </div>
       </div>
     </section>
-    <section class="servicios_padding">
+    <section class="servicios_padding" id="servicios">
       <div class="container">
         <div class="servicio_titulo">
           <h2 class="titulo_servicios">Nuestros servicios</h2>
@@ -65,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="galeria">
       <div>
         <div class="galeria_titulo">
           <h2> Galeria</h2>
@@ -76,8 +76,10 @@
         <div class="galeria_imagenes"><img src="img/imagen1.jpg" alt="">
           <div class="galeria_bg_imagen">
             <div class="galeria_parrafo_centrado">
-              <h3>Nombre de imagen</h3>
-              <p>lorem ipsum dolor sit                                </p>
+              <div class="imagen_centrado">
+                <h3>Nombre de imagen</h3>
+                <p>lorem ipsum dolor sit                                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -131,7 +133,7 @@
         <div class="atencion_link"><a href="#">Ponte en contacto  </a></div>
       </div>
     </section>
-    <section class="nosotros_contenido">
+    <section class="nosotros_contenido" id="testimonios">
       <div class="container">
         <div class="nosotros_titulo">
           <h2>Mira lo que dicen de nosotros</h2>
@@ -159,7 +161,7 @@
         </div>
       </div>
     </section>
-    <section class="seccion_contactanos">
+    <section class="seccion_contactanos" id="contactos">
       <div class="container">
         <div class="contactanos_titulo">
           <h2>cotactanos</h2>
@@ -198,5 +200,7 @@
     <footer>
       <p class="footer_parrafo">Todos los derechos reservados (c)</p>
     </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
